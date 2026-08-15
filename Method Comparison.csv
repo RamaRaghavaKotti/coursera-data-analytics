@@ -1,0 +1,68 @@
+Feature / Dimension,ANOVA (Analysis of Variance),ANCOVA (Analysis of Covariance),MANOVA (Multivariate ANOVA),MANCOVA (Multivariate ANCOVA)
+1. Primary Purpose,Compares means across groups for 1 continuous dependent variable.,Compares group means on 1 continuous outcome while adjusting for covariate(s).,Compares group means across 2+ continuous dependent variables simultaneously.,Compares group means across 2+ continuous outcome variables while adjusting for covariate(s).
+2. Definition,Statistical method to test if 3+ independent group means differ significantly.,Extension of ANOVA that blends ANOVA and linear regression to control for a continuous nuisance variable.,Extension of ANOVA that evaluates differences across groups on multiple interrelated dependent variables.,Extension combining MANOVA and ANCOVA to evaluate multiple dependent variables while controlling for covariate(s).
+3. Variables Required,• IVs: 1+ Categorical,• IVs: 1+ Categorical,• IVs: 1+ Categorical,• IVs: 1+ Categorical
+,,,,
+,• DVs: 1 Continuous,• DVs: 1 Continuous,• DVs: 2+ Continuous,• DVs: 2+ Continuous
+,,,,
+,• Covariates: None,• Covariates: 1+ Continuous,• Covariates: None,• Covariates: 1+ Continuous
+4. When to Use,When comparing 3 or more group means on a single metric to see if at least one group differs.,When a continuous baseline/confounding variable influences the outcome and needs to be statistically controlled.,When outcomes are correlated or when evaluating a multi-faceted construct across group conditions.,When studying multi-faceted outcomes where continuous baseline/confounding variables must be controlled.
+5. When NOT to Use / Limitations,• Violations of normality or homoscedasticity.,• If the covariate interacts with the IV (violates homogeneity of regression slopes).,• Highly multicollinear DVs (redundant).,• If covariates and IVs are highly correlated.
+,,,,
+,• Cannot control for baseline variables.,• If the covariate is affected by the treatment/IV.,"• Weakly correlated DVs ($r < 0.2$), where individual ANOVAs are more powerful.",• If regression slopes between covariates and DVs vary across groups.
+,,,,
+,• High Risk of Type I error if run repeatedly for multiple outcomes.,,,
+6. Practical Example,"Testing if three plant catalyst formulations (A, B, C) yield different average batch chemical outputs.","Testing catalyst yields (A, B, C) while controlling for baseline raw material purity levels.","Testing catalysts (A, B, C) on both product yield (%) and product purity (%) together.","Testing catalysts (A, B, C) on product yield and purity, while controlling for feed temperature."
+7. Key Features & Strengths,Reduces Type I error compared to running multiple two-sample t-tests; straightforward interpretation.,Increases statistical power and reduces unexplained error variance by statistically removing noise caused by covariates.,Controls for experiment-wise error rate across multiple outcomes; detects multi-outcome patterns invisible in univariate tests.,Highest statistical precision for multi-outcome designs; accounts for both outcome interrelationships and extraneous noise.
+8. Core Assumptions,1. Independence of observations.,"All ANOVA assumptions, plus:","All ANOVA assumptions, plus:","All MANOVA and ANCOVA assumptions combined (multivariate normality, Box's M, and linear/equal regression slopes across groups)."
+,,,,
+,2. Normality of residuals.,4. Linear relationship between DV and Covariate.,4. Multivariate normality.,
+,,,,
+,3. Homogeneity of variances (Levene's test).,5. Homogeneity of regression slopes.,5. Homogeneity of variance-covariance matrices (Box's M test).,
+,,,,
+,,,6. Moderate correlation among DVs.,
+,,,,
+,,,,
+Process & Care Points,,,,
+,,,,
+Sequential Steps in the Analysis Process,,,,
+,,,,
+1. Model Specification & Data Check:,,,,
+,,,,
+,,,,
+"Identify Independent Variables (factors), Dependent Variables, and continuous Covariates.",,,,
+,,,,
+"Verify measurement scales (Categorical IVs, Continuous DVs/Covariates).",,,,
+,,,,
+2. Assumption Testing:,,,,
+,,,,
+,,,,
+Test for normality (Shapiro-Wilk) and homogeneity of variances (Levene's Test).,,,,
+,,,,
+For MANOVA/MANCOVA: Test Box's M for covariance equality and check correlation matrix among DVs ($0.2 < \vert{}r\vert{} < 0.8$).,,,,
+,,,,
+For ANCOVA/MANCOVA: Test the interaction between IV and Covariate to ensure homogeneity of regression slopes.,,,,
+,,,,
+3. Run the Statistical Test:,,,,
+,,,,
+,,,,
+ANOVA/ANCOVA: Evaluate the $F$-statistic and associated $p$-value.,,,,
+,,,,
+"MANOVA/MANCOVA: Evaluate multivariate test statistics (Wilks' Lambda, Pillai's Trace, Hotelling's Trace, or Roy's Largest Root).",,,,
+,,,,
+4. Post-Hoc / Follow-Up Analysis:,,,,
+,,,,
+,,,,
+"If significant, conduct post-hoc pairwise comparisons (e.g., Tukey's HSD or Bonferroni adjustments) or univariate ANOVAs following a MANOVA.",,,,
+,,,,
+,,,,
+,,,,
+Essential Care to Be Taken,,,,
+,,,,
+Covariate Timing (ANCOVA & MANCOVA): Measure covariates before applying experimental treatments to ensure the IV does not alter the covariate.,,,,
+,,,,
+"Homogeneity of Regression Slopes: If the IV and Covariate interact significantly, the ANCOVA model is invalid; use a moderated regression approach instead.",,,,
+,,,,
+Multicollinearity in DVs (MANOVA & MANCOVA): Highly correlated outcome variables ($r > 0.85$ or $0.90$) introduce instability into matrix inversion; drop redundant DVs or combine them.,,,,
+,,,,
+Sample Size Considerations: MANOVA and MANCOVA require larger sample sizes per cell (ideally more observations per cell than the number of DVs + Covariates) to maintain adequate statistical power.,,,,
