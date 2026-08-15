@@ -11,11 +11,12 @@ I am currently available for **remote consulting opportunities (15-30 hours/week
 
 ## 🛠️ Technical Skills
 *   **Data Analysis & Modeling:** Python (Pandas, NumPy), SQL
+*   **Statistical Methods:** Descriptive Statistics, Hypothesis Testing, Regression Analysis, Probability Distributions
 *   **Data Visualization & Reporting:** Tableau, Matplotlib, Seaborn
-*   **Domain Expertise:** Process Engineering, Safety Audits, Troubleshooting, P&ID Reviews, Plant Operations
+*   **Process Safety Management (PSM):** HAZOP (Hazard and Operability Studies), Root Cause Analysis (RCA), Safety Integrity Level (SIL) Standards
+*   **Domain Expertise:** Process Engineering, Plant Operations, Safety Audits, Troubleshooting, P&ID Reviews, Digital Transformation
 
 ---
-
 
 *(Note: More projects are actively being added as I complete advanced certification modules.)*
 
@@ -23,6 +24,9 @@ I am currently available for **remote consulting opportunities (15-30 hours/week
 
 ## 📫 Let's Connect
 I am always open to discussing data-driven solutions for industrial challenges, consulting opportunities, or collaborating on technical projects.
+
+*   **LinkedIn:** [Rama Raghava Kumar Kotti](https://www.linkedin.com/in/kottiramakumar)
+*   **Strategic Reports:** [The Global Unicorn Value Drop and the Future of Heavy Industry (2015–2021)](#link-to-your-other-repo-if-applicable)
 
 *   **LinkedIn:** [Rama Raghava Kumar Kotti](https://www.linkedin.com/in/kottiramakumar)
 *   **Strategic Reports:** [The Global Unicorn Value Drop and the Future of Heavy Industry (2015–2021)](#link-to-your-other-repo-if-applicable)
