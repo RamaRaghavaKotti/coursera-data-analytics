@@ -28,5 +28,4 @@ I am always open to discussing data-driven solutions for industrial challenges, 
 *   **LinkedIn:** [Rama Raghava Kumar Kotti](https://www.linkedin.com/in/kottiramakumar)
 *   **Strategic Reports:** [The Global Unicorn Value Drop and the Future of Heavy Industry (2015–2021)](#link-to-your-other-repo-if-applicable)
 
-*   **LinkedIn:** [Rama Raghava Kumar Kotti](https://www.linkedin.com/in/kottiramakumar)
-*   **Strategic Reports:** [The Global Unicorn Value Drop and the Future of Heavy Industry (2015–2021)](#link-to-your-other-repo-if-applicable)
+
