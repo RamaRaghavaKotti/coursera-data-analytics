@@ -13,7 +13,7 @@ I am currently available for **remote consulting opportunities (15-30 hours/week
 *   **Data Analysis & Modeling:** Python (Pandas, NumPy), SQL
 *   **Statistical Methods:** Descriptive Statistics, Hypothesis Testing, Regression Analysis, Probability Distributions
 *   **Data Visualization & Reporting:** Tableau, Matplotlib, Seaborn
-*   **Process Safety Management (PSM):** HAZOP (Hazard and Operability Studies), Root Cause Analysis (RCA), Safety Integrity Level (SIL) Standards
+* **Process Safety Management (PSM):** HAZOP, Root Cause Analysis (RCA), Management of Change (MOC), Safety Audit Compliance
 *   **Domain Expertise:** Process Engineering, Plant Operations, Safety Audits, Troubleshooting, P&ID Reviews, Digital Transformation
 
 ---
